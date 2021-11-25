@@ -1,35 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "nmbs",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "No More Bleeding Sheep",
+  "description": "\"No More Bleeding Sheep\" is a single-mixin mod that prevents the Evoker from turning blue sheep into red sheep!",
   "authors": [
-    "Me!"
+    "OakBricks"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://modrinth.com/mod/nmbs",
+    "sources": "https://github.com/OakBricks/legacy-nmbs"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPLv3",
+  "icon": "assets/nmbs/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "org.oakbricks.nmbs.NoMoreBleedingSheep"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "nmbs.mixins.json"
   ],
 
   "depends": {
     "fabricloader": "*"
-  },
-  "suggests": {
-    "some-mod": "*"
   }
 }
